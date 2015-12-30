@@ -9,7 +9,7 @@ module.exports = {
     publicPath: '/build/'
   },
   resolve: {
-    extensions: ['', '.js', '.vue']
+    extensions: ['', '.js', '.vue', '.css']
   },
   module: {
     loaders: [

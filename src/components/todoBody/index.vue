@@ -1,11 +1,10 @@
 <template>
-  <todo-section></todo-section>
+main
 </template>
 
 <script>
   export default {
     components: {
-      todoSection: require('../components/todoSection')
     }
   }
 </script>
