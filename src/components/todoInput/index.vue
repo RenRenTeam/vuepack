@@ -1,7 +1,7 @@
 <style src="./style" scoped></style>
 
 <template>
-  <input placeholder="What needs to be done?"
+  <input placeholder="Whadt needs to be done?"
     @keydown.enter="handleSubmit" v-model="text" />
 </template>
 
@@ -14,7 +14,8 @@
     },
     methods: {
       handleSubmit () {
-        console.log(this.text)
+        const addTodoAction = this.$actions.todos.add
+        this.$store.dispatch(addTodoAction(this.text))
         this.text = ''
       }
     }
